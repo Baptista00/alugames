@@ -1,13 +1,13 @@
 let jogosAlugados = 0;
 
 function contarJogosAlugados(){
-    console.log(`Total de jogos alugados: ${jogosAlugados}!`);
+    document.getElementById('alugados-count').textContent = jogosAlugados;
 }
 
 let jogosDevolvidos = 0;
 
 function contarJogosDevolvidos(){
-        console.log(`Total de jogos devolvidos: ${jogosDevolvidos}!`);
+    document.getElementById('devolvidos-count').textContent = jogosDevolvidos;
 }
 
 function alterarStatus(id){
@@ -36,5 +36,4 @@ function alterarStatus(id){
         contarJogosAlugados();
     }
 }
-
 

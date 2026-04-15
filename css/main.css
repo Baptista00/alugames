@@ -135,3 +135,22 @@
     margin-right: 33px;
     align-self: flex-end;
 }
+
+.counters {
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.counter {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #00F4BF;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
