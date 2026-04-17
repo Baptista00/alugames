@@ -19,7 +19,7 @@ function alterarStatus(id){
     
     if (imagem.classList.contains('dashboard__item__img--rented')) {
 
-        if (confirm(`Você tem certeza que quer devolver o jogo ${nomeJogo.textContent}?`)) {
+        if (confirm(`Você realmente quer devolver o jogo ${nomeJogo.textContent}?`)) {
             imagem.classList.remove('dashboard__item__img--rented');
             botao.classList.remove('dashboard__item__button--return');
             botao.textContent = 'Alugar';
