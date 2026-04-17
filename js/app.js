@@ -6,6 +6,7 @@ function contarJogosAlugados(){
 
 let jogosDevolvidos = 0;
 
+
 function contarJogosDevolvidos(){
     document.getElementById('devolvidos-count').textContent = jogosDevolvidos;
 }
@@ -15,11 +16,10 @@ function alterarStatus(id){
     let imagem = gameClicado.querySelector('.dashboard__item__img');
     let botao = gameClicado.querySelector('.dashboard__item__button');
     let nomeJogo = gameClicado.querySelector('.dashboard__item__name');
-
     
     if (imagem.classList.contains('dashboard__item__img--rented')) {
 
-        if (confirm(`Você realmente quer devolver o jogo ${nomeJogo.textContent}?`)) {
+        if (confirm(`Você tem certeza que quer devolver o jogo ${nomeJogo.textContent}?`)) {
             imagem.classList.remove('dashboard__item__img--rented');
             botao.classList.remove('dashboard__item__button--return');
             botao.textContent = 'Alugar';
